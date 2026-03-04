@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+    <link rel="icon" type="image/jpg" sizes="32x32" href="../img/logoAzulPeque.jpg">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/styles.css">
+
+    <style>
+    .iconoAzul {
+        color: #0d2f6e !important;
+    }
+
+    .icono-responsive {
+        font-size: 4rem; /* tamaño en móvil */
+    }
+
+    @media (min-width: 768px) {
+        .icono-responsive { font-size: 6rem; } /* tablet */
+    }
+
+    @media (min-width: 992px) {
+        .icono-responsive { font-size: 8rem; } /* escritorio */
+    }
+    </style>
+
+</head>
+
+<body class="colorTer">
+    <!-- NAV ******************************************************************* -->
+    <nav class="navbar navbar-expand-lg navbar-dark colorPri">
+
+        <a class="navbar-brand font-weight-bold" href="../index.html">
+            <img class="img-fluid" src="../img/logoAzulPeque.jpg" alt="logo">
+            ControlaStock</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html"><i class="fas fa-home"></i> Inicio</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="funciones.html"><i class="fas fa-wrench"></i> Funciones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-phone"></i> Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <button type="button" class="btn btn-light btn-sm Redondear">Iniciar Secion</button>
+                </a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <!-- ********************************************************************* -->
+
+    <!-- Imagen hero -->
+
+    <header class="jumbotron jumbotron-fluid text-white colorSec mb-0">
+<!-- background:linear-gradient(rgba(0,0,0,55)), url('img/photo-bg.jbg') center/cover no-repeat; -->
+    <div class="container text-center">
+        <h1 class="dispay-3 font-weight-bold">Todas las funciones que necesitas.</h1>
+        <p class="lead">Gestiona tu tienda de manera profesional con herramientas simples y efectivas.</p>
+    </div>
+
+    </header>
+
+    <!-- Seccion main -->
+    <main>
+        <!-- Seccion de contenido principal -->
+        <section>
+            <h2 class="h2 mb-3 colorTextAz text-center mt-5 font-weight-bold">Un sistema completo para su negocio.</h2> <!-- mb = marggin bottom -->
+            <p class="h4 mb-5 text-center mx-5 px-3">ControlaStock integra todas las herramientas necesarias para administrar tu tienda local de forma eficiente. Desde el control de inventario hasta el análisis de ventas, todo en un solo lugar.</p>
+
+            <div class="row ml-5 pl-5 mt-5 pt-5">
+                <img src="../img/bolsaDinero.png" alt="bolsa de dinero" class="col-auto">
+                <div class="col-auto my-auto">
+                    <h4 class="h3">Gestión de Ventas</h4>
+                    <p class="mb-0">Registra y controla cada venta de tu tienda</p>
+                </div>
+            </div>
+
+            <div class="card-deck mb-3 mx-5">
+                <article class="card">
+                    <div class="text-center">
+                        <i class="fas fa-warehouse iconoAzul fa-10x py-5 icono-responsive"></i>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="h5 card-title">Gestión de Inventario</h3>
+                        <p class="card-text">Mantén un control preciso de todos tus productos. Actualiza stock en tiempo real, recibe alertas de productos con bajo inventario y organiza tu almacén de manera eficiente.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="text-center">
+                        <i class="fas fa-cash-register iconoAzul fa-10x py-5 icono-responsive"></i>
+                    </div>
+                    <div class=" card-body">
+                        <h3 class="h5 card-title">Registro de Ventas</h3>
+                        <p class="card-text">Registra todas tus ventas de forma rápida y sencilla. Genera tickets automáticos, lleva un historial completo de transacciones y consulta tus ventas por periodo.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="text-center">
+                        <i class="fas fa-edit iconoAzul fa-10x py-5 icono-responsive"></i>
+                    </div>
+                    <div class=" card-body">
+                        <h3 class="h5 card-title">Modificación de Ventas</h3>
+                        <p class="card-text">Edita ventas registradas cuando sea necesario. Corrige errores, actualiza información de clientes y ajusta detalles de productos vendidos con total flexibilidad.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="card-deck mb-3 mx-5">
+                <article class="card">
+                    <div class="text-center">
+                        <i class="fas fa-trash iconoAzul fa-10x py-5 icono-responsive"></i>
+                    </div>
+                    <div class=" card-body">
+                        <h3 class="h5 card-title">Eliminación de Ventas</h3>
+                        <p class="card-text">Elimina ventas canceladas o erróneas de forma segura. Restaura automáticamente el inventario y mantén tu base de datos limpia y organizada.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="text-center">
+                        <i class="fas fa-file-alt iconoAzul fa-10x py-5 icono-responsive"></i>
+                    </div>
+                    <div class=" card-body">
+                        <h3 class="h5 card-title">Reportes y Estadísticas</h3>
+                        <p class="card-text">Visualiza el desempeño de tu negocio con reportes detallados. Analiza tus productos más vendidos, tendencias de ventas y toma decisiones informadas.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img-top text-center">
+                        <i class="fas fa-key iconoAzul fa-10x py-5 icono-responsive"></i>
+                    </div>
+                    <div class=" card-body">
+                        <h3 class="h5 card-title">Acceso Multiplataforma</h3>
+                        <p class="card-text">Accede a tu sistema desde cualquier dispositivo. Gestiona tu tienda desde tu computadora, tablet o smartphone con total sincronización.</p>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+
+        <div class="colorCua">
+            <h2 class="h2 mb-3 colorTextAz text-center pt-5">¿Por qué elegir nuestro sistema?</h2>
+            <div class="colorCua card-deck mb-5 mx-5">
+                <article class="card colorCua border-0">
+                    <div class=" card-body">
+                        <h3 class="h5 card-title">Fácil de usar</h3>
+                        <p class="card-text">Diseñado pensando en pequeños comerciantes, sin complicaciones técnicas.</p>
+                    </div>
+                </article>
+
+                <article class="card colorCua border-0">
+                    <div class=" card-body">
+                        <h3 class="h5 card-title">Ahorra tiempo</h3>
+                        <p class="card-text">Automatiza tareas repetitivas y dedica más tiempo a atender a tus clientes.</p>
+                    </div>
+                </article>
+
+                <article class="card colorCua border-0">
+                    <div class=" card-body">
+                        <h3 class="h5 card-title">Control total</h3>
+                        <p class="card-text">Sabe exactamente qué tienes, qué vendes y qué necesitas comprar.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="colorCua card-deck mb-0 pb-5 mx-5">
+                <article class="card colorCua border-0">
+                    <div class=" card-body">
+                        <h3 class="h5 card-title">Evita pérdidas</h3>
+                        <p class="card-text">Reduce mermas y productos vencidos con alertas inteligentes.</p>
+                    </div>
+                </article>
+
+                <article class="card colorCua border-0">
+                    <div class=" card-body">
+                        <h3 class="h5 card-title">Acceso desde cualquier lugar</h3>
+                        <p class="card-text">Revisa tu negocio desde tu computadora, tablet o celular.</p>
+                    </div>
+                </article>
+
+                <article class="card colorCua border-0">
+                    <div class=" card-body">
+                        <h3 class="h5 card-title">Precio accesible</h3>
+                        <p class="card-text">Planes pensados para negocios pequeños con presupuestos ajustados.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="row justify-content-center colorQui pb-5">
+            <div class="col-12 text-center">
+                <h2 class="h2 mb-3 colorTextBlan text-center pt-5">Comienza a controlar tu inventario hoy</h2>
+                <p class="h4 text-center text-white">Únete a cientos de tiendas locales que ya confían en ControlaStock</p>
+                <button type="button" class="btn btn-light btn-outline-warning btn-lg colorTextAz Redondear mt-3 font-weight-bold">Crear una cuenta gratis</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="colorPri text-white text-center py-3">
+        &copy; 2026 ControlaStock - Sistema de Inventario para Tiendas Locales
+    </footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</body>
+</html>

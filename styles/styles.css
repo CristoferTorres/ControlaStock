@@ -1,0 +1,36 @@
+.colorPri{
+        background: #0a335b;
+    }
+
+.colorSec{
+    background: #0b3661;
+}
+
+.colorTer{
+    background: #F1F1F1;
+}
+
+.colorCua{
+    background: #D0DCE5;
+}
+
+.colorQui{
+    background: #004F99;
+}
+
+.colorText{
+    color: black;
+}
+
+.colorTextAz{
+    color: #0b3661;
+}
+
+.colorTextBlan{
+    color: #ffffff;
+}
+
+.Redondear{
+    border-radius: 10px;
+}
+
