@@ -26,11 +26,24 @@
     @media (min-width: 992px) {
         .icono-responsive { font-size: 8rem; } /* escritorio */
     }
+
+    .imagenDistancia{
+        margin-left: 90px;
+    }
+
+    .grosor{
+        height: 10px;
+    }
+
+    .borde{
+        border-radius: 10px;
+        border: 3px solid #ccc;
+    }
     </style>
 
 </head>
 
-<body class="colorTer">
+<body class="colorCua">
     <!-- NAV ******************************************************************* -->
     <nav class="navbar navbar-expand-lg navbar-dark colorPri">
 
@@ -78,140 +91,137 @@
     <!-- Seccion main -->
     <main>
         <!-- Seccion de contenido principal -->
-        <section>
+        <section class="mb-5">
             <h2 class="h2 mb-3 colorTextAz text-center mt-5 font-weight-bold">Un sistema completo para su negocio.</h2> <!-- mb = marggin bottom -->
             <p class="h4 mb-5 text-center mx-5 px-3">ControlaStock integra todas las herramientas necesarias para administrar tu tienda local de forma eficiente. Desde el control de inventario hasta el análisis de ventas, todo en un solo lugar.</p>
 
-            <div class="row ml-5 pl-5 mt-5 pt-5">
+            <div class="row imagenDistancia mt-5 pt-5">
                 <img src="../img/bolsaDinero.png" alt="bolsa de dinero" class="col-auto">
                 <div class="col-auto my-auto">
-                    <h4 class="h3">Gestión de Ventas</h4>
-                    <p class="mb-0">Registra y controla cada venta de tu tienda</p>
+                    <h4 class="h3 colorTextAz font-weight-bold">Gestión de Ventas</h4>
+                    <p class="mb-0 h5">Registra y controla cada venta de tu tienda</p>
                 </div>
             </div>
 
+            <hr class="mx-5 grosor">
+
             <div class="card-deck mb-3 mx-5">
-                <article class="card">
-                    <div class="text-center">
-                        <i class="fas fa-warehouse iconoAzul fa-10x py-5 icono-responsive"></i>
-                    </div>
+                <article class="card borde">
                     <div class="card-body">
-                        <h3 class="h5 card-title">Gestión de Inventario</h3>
-                        <p class="card-text">Mantén un control preciso de todos tus productos. Actualiza stock en tiempo real, recibe alertas de productos con bajo inventario y organiza tu almacén de manera eficiente.</p>
+                        <h3 class="h5 card-title colorTextAz font-weight-bold">Registro Rápido</h3>
+                        <p class="card-text">Captura ventas en segundos con una interfaz intuitiva. Busca productos por nombre o código de barras y agrega cantidades fácilmente.</p>
                     </div>
                 </article>
 
-                <article class="card">
-                    <div class="text-center">
-                        <i class="fas fa-cash-register iconoAzul fa-10x py-5 icono-responsive"></i>
-                    </div>
+                <article class="card borde">
                     <div class=" card-body">
-                        <h3 class="h5 card-title">Registro de Ventas</h3>
-                        <p class="card-text">Registra todas tus ventas de forma rápida y sencilla. Genera tickets automáticos, lleva un historial completo de transacciones y consulta tus ventas por periodo.</p>
+                        <h3 class="h5 card-title colorTextAz font-weight-bold">Tickets de Venta</h3>
+                        <p class="card-text">Genera tickets automáticos para tus clientes con todos los detalles de la compra, incluyendo fecha, productos, cantidades y total.</p>
                     </div>
                 </article>
 
-                <article class="card">
-                    <div class="text-center">
-                        <i class="fas fa-edit iconoAzul fa-10x py-5 icono-responsive"></i>
-                    </div>
+                <article class="card borde">
                     <div class=" card-body">
-                        <h3 class="h5 card-title">Modificación de Ventas</h3>
-                        <p class="card-text">Edita ventas registradas cuando sea necesario. Corrige errores, actualiza información de clientes y ajusta detalles de productos vendidos con total flexibilidad.</p>
+                        <h3 class="h5 card-title colorTextAz font-weight-bold">Métodos de Pago</h3>
+                        <p class="card-text">Registra diferentes formas de pago: efectivo, tarjeta, transferencia o crédito. Mantén un control claro de cómo recibes el dinero.</p>
                     </div>
                 </article>
             </div>
 
             <div class="card-deck mb-3 mx-5">
-                <article class="card">
-                    <div class="text-center">
-                        <i class="fas fa-trash iconoAzul fa-10x py-5 icono-responsive"></i>
-                    </div>
+                <article class="card borde">
                     <div class=" card-body">
-                        <h3 class="h5 card-title">Eliminación de Ventas</h3>
-                        <p class="card-text">Elimina ventas canceladas o erróneas de forma segura. Restaura automáticamente el inventario y mantén tu base de datos limpia y organizada.</p>
+                        <h3 class="h5 card-title colorTextAz font-weight-bold">Historial Completo</h3>
+                        <p class="card-text">Consulta todas las ventas realizadas con filtros por fecha, cliente, producto o monto. Encuentra cualquier transacción en segundos.</p>
                     </div>
                 </article>
 
-                <article class="card">
-                    <div class="text-center">
-                        <i class="fas fa-file-alt iconoAzul fa-10x py-5 icono-responsive"></i>
-                    </div>
+                <article class="card borde">
                     <div class=" card-body">
-                        <h3 class="h5 card-title">Reportes y Estadísticas</h3>
-                        <p class="card-text">Visualiza el desempeño de tu negocio con reportes detallados. Analiza tus productos más vendidos, tendencias de ventas y toma decisiones informadas.</p>
+                        <h3 class="h5 card-title colorTextAz font-weight-bold">Devoluciones</h3>
+                        <p class="card-text">Gestiona devoluciones y ajustes de manera ordenada, manteniendo tu inventario y reportes siempre actualizados correctamente.</p>
                     </div>
                 </article>
 
-                <article class="card">
-                    <div class="card-img-top text-center">
-                        <i class="fas fa-key iconoAzul fa-10x py-5 icono-responsive"></i>
-                    </div>
+                <article class="card borde">
                     <div class=" card-body">
-                        <h3 class="h5 card-title">Acceso Multiplataforma</h3>
-                        <p class="card-text">Accede a tu sistema desde cualquier dispositivo. Gestiona tu tienda desde tu computadora, tablet o smartphone con total sincronización.</p>
+                        <h3 class="h5 card-title colorTextAz font-weight-bold">Control de Caja</h3>
+                        <p class="card-text">Registra aperturas y cierres de caja diarios. Compara el efectivo esperado contra el real y detecta diferencias rápidamente.</p>
                     </div>
                 </article>
+            </div>
+
+            <div class="colorSec text-center m-5 p-3" style="border-radius: 10px;">
+                <p class="colorTextBlan p-0 m-0">Cada venta registrada te ayuda a conocer mejor tu negocio: qué productos se venden más, en qué horarios hay más movimiento y cuánto dinero generas diariamente. Esta información es clave para tomar mejores decisiones.</p>
             </div>
 
         </section>
 
-        <div class="colorCua">
-            <h2 class="h2 mb-3 colorTextAz text-center pt-5">¿Por qué elegir nuestro sistema?</h2>
-            <div class="colorCua card-deck mb-5 mx-5">
-                <article class="card colorCua border-0">
-                    <div class=" card-body">
-                        <h3 class="h5 card-title">Fácil de usar</h3>
-                        <p class="card-text">Diseñado pensando en pequeños comerciantes, sin complicaciones técnicas.</p>
+        <!--  -->
+        <section class="my-5">
+
+            <div class="row imagenDistancia mt-5 pt-5">
+                <img src="../img/cajaAzul.png" alt="caja" class="col-auto">
+                <div class="col-auto my-auto">
+                    <h4 class="h3 colorTextAz font-weight-bold">Control de Inventario</h4>
+                    <p class="mb-0 h5">Mantén actualizado el stock de tu tienda</p>
+                </div>
+            </div>
+
+            <hr class="mx-5 grosor">
+
+            <div class="card-deck mb-3 mx-5">
+                <article class="card borde">
+                    <div class="card-body">
+                        <h3 class="h5 card-title colorTextAz font-weight-bold">Catálogo de Productos</h3>
+                        <p class="card-text">Crea y organiza tu catálogo completo con nombre, descripción, precio, código de barras y categorías personalizadas.</p>
                     </div>
                 </article>
 
-                <article class="card colorCua border-0">
+                <article class="card borde">
                     <div class=" card-body">
-                        <h3 class="h5 card-title">Ahorra tiempo</h3>
-                        <p class="card-text">Automatiza tareas repetitivas y dedica más tiempo a atender a tus clientes.</p>
+                        <h3 class="h5 card-title colorTextAz font-weight-bold">Stock en Tiempo Real</h3>
+                        <p class="card-text">Conoce exactamente cuántas unidades tienes de cada producto. El inventario se actualiza automáticamente con cada venta o compra.</p>
                     </div>
                 </article>
 
-                <article class="card colorCua border-0">
+                <article class="card borde">
                     <div class=" card-body">
-                        <h3 class="h5 card-title">Control total</h3>
-                        <p class="card-text">Sabe exactamente qué tienes, qué vendes y qué necesitas comprar.</p>
+                        <h3 class="h5 card-title colorTextAz font-weight-bold">Alertas de Stock Bajo</h3>
+                        <p class="card-text">Recibe notificaciones cuando un producto esté por agotarse. Define el nivel mínimo para cada artículo según tus necesidades.</p>
                     </div>
                 </article>
             </div>
 
-            <div class="colorCua card-deck mb-0 pb-5 mx-5">
-                <article class="card colorCua border-0">
+            <div class="card-deck mb-3 mx-5">
+                <article class="card borde">
                     <div class=" card-body">
-                        <h3 class="h5 card-title">Evita pérdidas</h3>
-                        <p class="card-text">Reduce mermas y productos vencidos con alertas inteligentes.</p>
+                        <h3 class="h5 card-title colorTextAz font-weight-bold">Precios y Descuentos</h3>
+                        <p class="card-text">Gestiona precios de compra y venta. Configura descuentos temporales o permanentes para promociones especiales.</p>
                     </div>
                 </article>
 
-                <article class="card colorCua border-0">
+                <article class="card borde">
                     <div class=" card-body">
-                        <h3 class="h5 card-title">Acceso desde cualquier lugar</h3>
-                        <p class="card-text">Revisa tu negocio desde tu computadora, tablet o celular.</p>
+                        <h3 class="h5 card-title colorTextAz font-weight-bold">Múltiples Presentaciones</h3>
+                        <p class="card-text">Maneja productos con diferentes presentaciones: por pieza, caja, paquete o kilo. Convierte unidades automáticamente.</p>
                     </div>
                 </article>
 
-                <article class="card colorCua border-0">
+                <article class="card borde">
                     <div class=" card-body">
-                        <h3 class="h5 card-title">Precio accesible</h3>
-                        <p class="card-text">Planes pensados para negocios pequeños con presupuestos ajustados.</p>
+                        <h3 class="h5 card-title colorTextAz font-weight-bold">Fechas de Caducidad</h3>
+                        <p class="card-text">Registra fechas de vencimiento y recibe alertas de productos próximos a caducar para evitar pérdidas.</p>
                     </div>
                 </article>
             </div>
-        </div>
 
-        <div class="row justify-content-center colorQui pb-5">
-            <div class="col-12 text-center">
-                <h2 class="h2 mb-3 colorTextBlan text-center pt-5">Comienza a controlar tu inventario hoy</h2>
-                <p class="h4 text-center text-white">Únete a cientos de tiendas locales que ya confían en ControlaStock</p>
-                <button type="button" class="btn btn-light btn-outline-warning btn-lg colorTextAz Redondear mt-3 font-weight-bold">Crear una cuenta gratis</button>
+            <div class="colorSec text-center m-5 p-3" style="border-radius: 10px;">
+                <p class="colorTextBlan p-0 m-0">Cada venta registrada te ayuda a conocer mejor tu negocio: qué productos se venden más, en qué horarios hay más movimiento y cuánto dinero generas diariamente. Esta información es clave para tomar mejores decisiones.</p>
             </div>
-        </div>
+
+        </section>
+
     </main>
     
     <footer class="colorPri text-white text-center py-3">
