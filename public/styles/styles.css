@@ -1,3 +1,4 @@
+/*background color*/
 .colorPri{
         background: #0a335b;
     }
@@ -34,3 +35,36 @@
     border-radius: 10px;
 }
 
+
+/*icons -responsive*/
+.iconoAzul { color: #0d2f6e !important; }
+
+.icono-responsive { font-size: 4rem; }
+
+@media (min-width: 768px) {
+    .icono-responsive { font-size: 6rem; }
+}
+
+@media (min-width: 992px) {
+    .icono-responsive { font-size: 8rem; }
+}
+
+/* Cards hover */
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/*Borde y grososr de cards*/
+.grosor {
+    border: none;
+    border-top: 4px solid #ccc;
+}
+
+.borde {
+    border-radius: 10px;
+    border: 3px solid #ccc;
+}
