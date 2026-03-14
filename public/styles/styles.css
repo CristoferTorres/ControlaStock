@@ -14,7 +14,6 @@
 .Redondear { border-radius: 10px; }
 
 /* ── Navbar ────────────────────────────────────────── */
-/* FIX: los links del nav no se veían bien sobre el fondo azul oscuro */
 .nav-link-custom {
     color: rgba(255, 255, 255, 0.90) !important;
     font-weight: 500;
@@ -79,6 +78,19 @@
     width: 40px;
     height: 40px;
     object-fit: contain;
+}
+
+/* Iniciar Sesión*/
+.nav-login {
+    color: rgba(255, 255, 255, 0.70);
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+    text-decoration: none;
+}
+.nav-login:hover {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 /* ── Cards ─────────────────────────────────────────── */
