@@ -17,7 +17,7 @@
     <!-- NAV -->
     <nav class="navbar navbar-expand-lg navbar-dark colorPri">
         <a class="navbar-brand font-weight-bold" href="index.html">
-            <img class="img-fluid" src="img/logoAzulPeque.jpg" alt="Logo ControlaStock">
+            <img src="img/logoPrincipal.png" class="nav-logo mr-2" alt="Logo ControlaStock">
             ControlaStock
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -25,27 +25,29 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
+            <!-- mx-auto centra los links, el botón queda a la derecha naturalmente -->
+            <ul class="navbar-nav mx-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Inicio</a>
+                    <a class="nav-link nav-link-custom" href="index.html"><i class="fas fa-home"></i> Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="views/funciones.html"><i class="fas fa-wrench"></i> Funciones</a>
+                    <a class="nav-link nav-link-custom" href="views/funciones.html"><i class="fas fa-wrench"></i> Funciones</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="views/contacto.html"><i class="fas fa-phone"></i> Contacto</a>
+                    <a class="nav-link nav-link-custom" href="views/contacto.html"><i class="fas fa-phone"></i> Contacto</a>
                 </li>
             </ul>
-            <a class="btn btn-outline-light btn-sm Redondear ml-lg-2" href="views/login.html">Iniciar Sesión</a>
+            <!-- Botón relleno, no outline -->
+            <a class="btn btn-light btn-sm Redondear font-weight-bold colorTextAz" href="views/login.html">Iniciar Sesión</a>
         </div>
     </nav>
 
     <!-- HERO -->
     <header class="jumbotron jumbotron-fluid text-white colorSec mb-0">
         <div class="container text-center">
-            <h1 class="display-3 font-weight-bold">Gestiona tu Inventario de Forma Inteligente</h1>
-            <p class="lead">ControlaStock es la solución completa para administrar el inventario de tu tienda, registrar ventas y mantener el control total de tu negocio.</p>
-            <a href="views/login.html" class="btn btn-light btn-lg Redondear colorTextAz font-weight-bold">COMENZAR GRATIS</a>
+            <h1 class="display-4 font-weight-bold hero-titulo">Gestiona tu Inventario de Forma Inteligente</h1>
+            <p class="lead hero-subtitulo">ControlaStock es la solución completa para administrar el inventario de tu tienda, registrar ventas y mantener el control total de tu negocio.</p>
+            <a href="views/login.html" class="btn btn-light btn-lg Redondear colorTextAz font-weight-bold hero-btn">COMENZAR GRATIS</a>
         </div>
     </header>
 
@@ -55,18 +57,18 @@
         <!-- Stats -->
         <section class="row justify-content-center colorQui py-5 mx-0">
             <div class="col-auto">
-                <div class="mr-4 row">
-                    <img src="img/caja.png" class="col-auto pr-0" alt="Ícono inventario">
+                <div class="mr-4 row align-items-center">
+                    <img src="img/caja.png" class="stats-img col-auto pr-0" alt="Ícono inventario">
                     <h2 class="h1 text-white col-auto my-auto font-weight-bold">100%</h2>
                 </div>
-                <p class="h5 text-center text-white">Control de Inventarios</p>
+                <p class="h5 text-center text-white mt-2">Control de Inventarios</p>
             </div>
             <div class="col-auto">
-                <div class="mr-4 row">
-                    <img src="img/grafica.png" class="col-auto pr-0" alt="Ícono gráfica">
+                <div class="mr-4 row align-items-center">
+                    <img src="img/grafica.png" class="stats-img col-auto pr-0" alt="Ícono gráfica">
                     <h2 class="h1 text-white col-auto my-auto font-weight-bold">24/7</h2>
                 </div>
-                <p class="h5 text-center text-white">Disponibilidad</p>
+                <p class="h5 text-center text-white mt-2">Disponibilidad</p>
             </div>
         </section>
 
@@ -77,7 +79,6 @@
             <div class="card-deck mb-3 mx-5">
                 <article class="card">
                     <div class="text-center">
-                        <!-- FIX: fa-10x sobra, icono-responsive ya lo controla -->
                         <i class="fas fa-warehouse iconoAzul py-5 icono-responsive"></i>
                     </div>
                     <div class="card-body">
