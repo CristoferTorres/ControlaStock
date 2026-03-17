@@ -90,31 +90,33 @@
                 <h2 class="h4 colorTextAz font-weight-bold mb-1">Enviar Mensaje de Soporte</h2>
                 <p class="text-muted mb-4">Completa el formulario y nuestro equipo te responderá lo antes posible</p>
 
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="nombre">Nombre Completo:</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="">
+                <form id="formContacto">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="nombre">Nombre Completo:</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
                     </div>
-                    <div class="form-group col-md-6">
-                        <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="">
+
+                    <div class="form-group">
+                        <label for="asunto">Asunto:</label>
+                        <input type="text" class="form-control" id="asunto" required>
                     </div>
-                </div>
 
-                <div class="form-group">
-                    <label for="asunto">Asunto:</label>
-                    <input type="text" class="form-control" id="asunto" placeholder="">
-                </div>
+                    <div class="form-group">
+                        <label for="mensaje">Describe tu problema:</label>
+                        <textarea class="form-control" id="mensaje" rows="5" minlength="20" required></textarea>
+                        <small class="text-muted">Mínimo 20 caracteres</small>
+                    </div>
 
-                <div class="form-group">
-                    <label for="mensaje">Describe tu problema:</label>
-                    <textarea class="form-control" id="mensaje" rows="5" minlength="20"></textarea>
-                    <small class="text-muted">Mínimo 20 caracteres</small>
-                </div>
-
-                <button type="button" class="btn colorQui text-white btn-block Redondear font-weight-bold mt-3">
-                    Enviar consulta
-                </button>
+                    <button type="submit" class="btn colorQui text-white btn-block Redondear font-weight-bold mt-3">
+                        Enviar consulta
+                    </button>
+                </form>
             </div>
         </div>
 
