@@ -1,0 +1,187 @@
+/* ── Layout ─────────────────────────────────────────── */
+.menu {
+    width: 20%;
+    height: 100vh;
+    position: fixed !important;
+    flex-shrink: 0;
+    overflow-y: auto;
+}
+.contenido {
+    margin-left: 20%;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    min-width: 0;
+}
+
+@media (max-width: 1030px) { .menu { width: 25%; } .contenido { margin-left: 25%; } }
+@media (max-width: 933px)  { .menu { width: 30%; } .contenido { margin-left: 30%; } }
+@media (max-width: 768px)  { .menu { width: 35%; } .contenido { margin-left: 35%; } }
+@media (max-width: 600px)  { .menu { width: 43%; } .contenido { margin-left: 43%; } }
+
+/* ── Sidebar ────────────────────────────────────────── */
+.borde_delgado {
+    border: 1px solid #304270;
+    border-radius: 10px;
+}
+
+.btn_funciones {
+    text-decoration: none;
+    color: #fff;
+    text-align: left;
+    padding: 0.75rem 1.5rem;
+    display: block;
+    transition: background 0.2s ease;
+}
+.btn_funciones:hover {
+    text-decoration: none;
+    background: #0d3f70;
+    color: #fff;
+}
+.activo .btn_funciones {
+    border-radius: 10px;
+    border: 1px solid #304270;
+    background: #0a347c94;
+    color: #fff;
+    margin: 0.25rem 1rem;
+    padding: 0.5rem 1rem;
+}
+
+/* ── Notificacion ───────────────────────────────────── */
+.conteNoti {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.conteNoti:hover {
+    background: #ccd1d3;
+    border-radius: 50%;
+}
+
+/* ── Transición de vistas ───────────────────────────── */
+.vista-fade {
+    animation: fadeIn 0.3s ease;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Tarjetas stats ─────────────────────────────────── */
+.stat-card {
+    border-radius: 10px;
+    border: 2px solid #dce3ea;
+    background: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+}
+
+/* ── Alertas de stock ───────────────────────────────── */
+.alerta-item {
+    border-left: 4px solid #dc3545;
+    background: #fff5f5;
+    border-radius: 6px;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.5rem;
+}
+.alerta-item.amarillo {
+    border-left-color: #ffc107;
+    background: #fffbf0;
+}
+
+/* ── Acceso rápido ──────────────────────────────────── */
+.acceso-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.65rem 1rem;
+    border-radius: 8px;
+    border: 1.5px solid #dce3ea;
+    background: #fff;
+    color: #0b3661;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background 0.2s, box-shadow 0.2s;
+    margin-bottom: 0.5rem;
+}
+.acceso-btn:hover {
+    background: #e8eef5;
+    text-decoration: none;
+    color: #0b3661;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+.acceso-btn i { font-size: 1.1rem; color: #004F99; }
+
+/* ── Actividad reciente ─────────────────────────────── */
+.actividad-item {
+    border-left: 3px solid #004F99;
+    padding: 0.4rem 0.75rem;
+    margin-bottom: 0.6rem;
+    background: #f7f9fb;
+    border-radius: 0 6px 6px 0;
+}
+.actividad-item .tiempo {
+    font-size: 0.72rem;
+    color: #888;
+}
+
+/* ── Ventas: progress bars ──────────────────────────── */
+.progress-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #0b3661;
+}
+.progress { height: 10px; border-radius: 6px; }
+.progress-bar-ventas  { background: #004F99; }
+.progress-bar-trans   { background: #28a745; }
+
+/* ── Ventas: productos más vendidos ─────────────────── */
+.producto-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #eee;
+}
+.producto-item:last-child { border-bottom: none; }
+.producto-precio {
+    font-weight: 700;
+    color: #0b3661;
+    font-size: 1rem;
+}
+
+/* ── Ventas recientes tabla ─────────────────────────── */
+.ventas-recientes-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #eee;
+    font-size: 0.85rem;
+}
+.ventas-recientes-item:last-child { border-bottom: none; }
+
+/* ── Placeholder vistas ─────────────────────────────── */
+.vista-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    color: #aaa;
+}
+.vista-placeholder i { font-size: 4rem; margin-bottom: 1rem; }
+
+/* ── Footer ventas ──────────────────────────────────── */
+.footer-dash {
+    background: #0a335b;
+    color: rgba(255,255,255,0.7);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+}
