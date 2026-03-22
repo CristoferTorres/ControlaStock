@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador - ControlaStock</title>
+
+    <link rel="icon" type="image/jpeg" sizes="32x32" href="../img/logoAzulPeque.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/Dashboard.css">
+    <link rel="stylesheet" href="../styles/sidebar.css">
+</head>
+<body class="colorCua">
+
+    <!-- ══ OVERLAY MOBILE ══════════════════════════════════ -->
+    <div class="sb-overlay-mobile" id="sbOverlay" onclick="cerrarMenu()"></div>
+
+    <!-- ══ TOPBAR MOBILE (solo visible en ≤768px) ══════════ -->
+    <div class="topbar-mobile">
+        <button class="hamburger-btn" id="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </button>
+        <span class="topbar-brand-mobile">ControlaStock</span>
+        <div class="topbar-avatar">
+            <img src="../img/YukinoXD.jpg" alt="Avatar">
+        </div>
+    </div>
+
+    <!-- ══ WRAPPER ═════════════════════════════════════════ -->
+    <div class="d-flex">
+
+        <!-- ══ SIDEBAR ══════════════════════════════════════ -->
+        <aside class="sidebar-admin" id="sidebarAdmin">
+
+            <!-- Cabecera -->
+            <div class="sidebar-header">
+                <i class="fas fa-boxes sidebar-logo-icon"></i>
+                <div class="sidebar-brand-text">
+                    <h2>ControlaStock</h2>
+                    <span>Sistema de inventario</span>
+                </div>
+            </div>
+
+            <!-- Etiqueta Administrador -->
+            <div class="sidebar-section-label">
+                <div class="section-line"></div>
+                <span class="section-text">Administrador</span>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Perfil -->
+            <div class="sidebar-profile">
+                <img src="../img/YukinoXD.jpg" alt="Avatar" class="profile-avatar">
+                <div class="profile-info">
+                    <strong>Oscar Daniel</strong>
+                    <span>Tienda: María de Cruz</span>
+                </div>
+            </div>
+
+            <!-- Etiqueta Menú -->
+            <div class="sidebar-section-label">
+                <div class="section-line"></div>
+                <span class="section-text">Menú</span>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Links de navegación -->
+            <ul class="sidebar-links" id="menuNav">
+                <li class="nav-item activo" data-vista="dashboard">
+                    <a class="sidebar-link" href="#" title="Dashboard" onclick="cerrarMenu()">
+                        <i class="fas fa-th-large"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-vista="ventas">
+                    <a class="sidebar-link" href="#" title="Ventas" onclick="cerrarMenu()">
+                        <i class="fas fa-cash-register"></i>
+                        <span>Ventas</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-vista="inventario">
+                    <a class="sidebar-link" href="#" title="Inventario" onclick="cerrarMenu()">
+                        <i class="fas fa-boxes"></i>
+                        <span>Inventario</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-vista="empleados">
+                    <a class="sidebar-link" href="#" title="Empleados" onclick="cerrarMenu()">
+                        <i class="fas fa-user-tie"></i>
+                        <span>Empleados</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-vista="actividad">
+                    <a class="sidebar-link" href="#" title="Actividad" onclick="cerrarMenu()">
+                        <i class="fas fa-history"></i>
+                        <span>Actividad</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Botón toggle (solo visible en desktop) -->
+            <button class="sidebar-toggle-btn" id="sidebarToggle">
+                <i class="fas fa-chevron-left" id="toggleIcon"></i>
+            </button>
+
+        </aside>
+
+        <!-- ══ CONTENIDO PRINCIPAL ═══════════════════════════ -->
+        <div class="contenido-admin" id="contenidoAdmin">
+
+            <!-- Navbar superior (solo desktop) -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light d-none d-md-flex">
+                <div class="collapse navbar-collapse d-flex justify-content-between align-items-center w-100">
+
+                    <!-- Izquierda: tienda -->
+                    <span class="font-weight-bold" style="color:#004F99; font-size:.95rem;">
+                        <i class="fas fa-store mr-1"></i>Tienda: María de Cruz
+                    </span>
+
+                    <!-- Derecha: campana + perfil -->
+                    <div class="d-flex align-items-center">
+                        <div class="conteNoti d-flex align-items-center justify-content-center">
+                            <a href="#" class="d-flex align-items-center justify-content-center w-100 h-100" style="text-decoration:none;">
+                                <i class="far fa-bell" style="color:#1d3766;"></i>
+                            </a>
+                        </div>
+                        <div class="ml-3 d-flex align-items-center">
+                            <img src="../img/YukinoXD.jpg" alt="Avatar" class="rounded borde_delgado" style="width:36px;height:36px;object-fit:cover;">
+                            <div class="ml-2">
+                                <p class="small font-weight-bold mb-0">Oscar Daniel</p>
+                                <p class="small text-muted mb-0" style="font-size:0.75rem;">admin_daniel@controlastock.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+
+            <!-- Zona de vistas -->
+            <div id="vistaContenido" class="vista-fade"></div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../js/router_admin.js"></script>
+
+    <script>
+        /* ── Toggle desktop (colapsar/expandir) ── */
+        const sidebar    = document.getElementById('sidebarAdmin');
+        const contenido  = document.getElementById('contenidoAdmin');
+        const toggleIcon = document.getElementById('toggleIcon');
+
+        document.getElementById('sidebarToggle').addEventListener('click', () => {
+            const collapsed = sidebar.classList.toggle('collapsed');
+            contenido.classList.toggle('expanded', collapsed);
+            toggleIcon.classList.toggle('fa-chevron-left',  !collapsed);
+            toggleIcon.classList.toggle('fa-chevron-right',  collapsed);
+        });
+
+        /* ── Toggle mobile (abrir/cerrar) ── */
+        function toggleMenu() {
+            const open = sidebar.classList.toggle('open');
+            document.getElementById('hamburger').classList.toggle('open', open);
+            document.getElementById('sbOverlay').classList.toggle('visible', open);
+            document.body.classList.toggle('sb-open', open);
+        }
+
+        function cerrarMenu() {
+            sidebar.classList.remove('open');
+            document.getElementById('hamburger').classList.remove('open');
+            document.getElementById('sbOverlay').classList.remove('visible');
+            document.body.classList.remove('sb-open');
+        }
+
+        /* Cerrar al redimensionar a desktop */
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) cerrarMenu();
+        });
+    </script>
+
+</body>
+</html>

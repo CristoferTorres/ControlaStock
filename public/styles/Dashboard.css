@@ -1,52 +1,3 @@
-/* ── Layout ─────────────────────────────────────────── */
-.menu {
-    width: 20%;
-    height: 100vh;
-    position: fixed !important;
-    flex-shrink: 0;
-    overflow-y: auto;
-}
-.contenido {
-    margin-left: 20%;
-    width: 100%;
-    min-height: 100vh;
-    overflow-x: hidden;
-    min-width: 0;
-}
-
-@media (max-width: 1030px) { .menu { width: 25%; } .contenido { margin-left: 25%; } }
-@media (max-width: 933px)  { .menu { width: 30%; } .contenido { margin-left: 30%; } }
-@media (max-width: 768px)  { .menu { width: 35%; } .contenido { margin-left: 35%; } }
-@media (max-width: 600px)  { .menu { width: 43%; } .contenido { margin-left: 43%; } }
-
-/* ── Sidebar ────────────────────────────────────────── */
-.borde_delgado {
-    border: 1px solid #304270;
-    border-radius: 10px;
-}
-
-.btn_funciones {
-    text-decoration: none;
-    color: #fff;
-    text-align: left;
-    padding: 0.75rem 1.5rem;
-    display: block;
-    transition: background 0.2s ease;
-}
-.btn_funciones:hover {
-    text-decoration: none;
-    background: #0d3f70;
-    color: #fff;
-}
-.activo .btn_funciones {
-    border-radius: 10px;
-    border: 1px solid #304270;
-    background: #0a347c94;
-    color: #fff;
-    margin: 0.25rem 1rem;
-    padding: 0.5rem 1rem;
-}
-
 /* ── Notificacion ───────────────────────────────────── */
 .conteNoti {
     width: 40px;
@@ -56,6 +7,12 @@
 .conteNoti:hover {
     background: #ccd1d3;
     border-radius: 50%;
+}
+
+/* ── Borde delgado (topbar avatar) ─────────────────── */
+.borde_delgado {
+    border: 1px solid #304270;
+    border-radius: 10px;
 }
 
 /* ── Transición de vistas ───────────────────────────── */
@@ -154,7 +111,7 @@
     font-size: 1rem;
 }
 
-/* ── Ventas recientes tabla ─────────────────────────── */
+/* ── Ventas recientes ───────────────────────────────── */
 .ventas-recientes-item {
     display: flex;
     justify-content: space-between;
