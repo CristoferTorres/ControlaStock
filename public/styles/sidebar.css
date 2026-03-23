@@ -346,6 +346,8 @@
 
     /* Cuando el sidebar está abierto en mobile, bloquear scroll */
     body.sb-open { overflow: hidden; }
+
+    
 }
 
 @media (max-width: 576px) {

@@ -61,7 +61,7 @@ export function getVentasHoyAdminHTML() {
         <div class="stat-card p-3 mb-4">
             <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap" style="gap:.5rem">
                 <h5 class="font-weight-bold mb-0">Ventas del día</h5>
-                <button class="btn btn-primary btn-sm Redondear font-weight-bold">
+                <button data-acceso="agregarVenta" class="btn btn-primary btn-sm Redondear font-weight-bold">
                     <i class="fas fa-plus mr-1"></i> Agregar Venta
                 </button>
             </div>
@@ -88,7 +88,7 @@ export function getVentasHoyAdminHTML() {
                             <td class="font-weight-bold">${v.total}</td>
                             <td class="text-muted">${v.fecha}</td>
                             <td>
-                                <button class="btn btn-sm btn-outline-secondary p-1 mr-1" title="Editar">
+                                <button data-acceso="editarVenta" class="btn btn-sm btn-outline-secondary p-1 mr-1" title="Editar">
                                     <i class="fas fa-pencil-alt" style="font-size:0.7rem;"></i>
                                 </button>
                                 <button class="btn btn-sm btn-outline-danger p-1" title="Eliminar">
