@@ -2,57 +2,57 @@
 
 export function getDashboardHTML() {
     return `
-    <div class="px-4 px-md-5 py-4">
-        <h2 class="h3 font-weight-bold mb-0">Dashboard</h2>
+    <div class="px-3 px-md-5 py-4">
+        <h2 class="h4 font-weight-bold mb-0">Dashboard</h2>
         <p class="small text-muted mb-4">Miércoles, 19 de Noviembre 2025 &bull; 14:33 PM</p>
 
         <div class="row">
             <!-- Columna izquierda -->
             <div class="col-lg-8 col-12">
 
-                <!-- Tarjetas de stats -->
+                <!-- Tarjetas de stats: 2x2 en móvil, 2x2 en desktop -->
                 <div class="row mb-4">
-                    <div class="col-md-6 col-12 mb-3">
-                        <div class="stat-card p-3">
+                    <div class="col-6 mb-3">
+                        <div class="stat-card p-2 p-md-3">
                             <div class="d-flex align-items-center justify-content-between">
-                                <div>
-                                    <p class="small text-muted mb-1 font-weight-bold text-uppercase">Total Productos</p>
-                                    <h2 class="h3 font-weight-bold mb-0">1,247</h2>
+                                <div style="min-width:0">
+                                    <p class="stat-label mb-1">Total Productos</p>
+                                    <h2 class="stat-num font-weight-bold mb-0">1,247</h2>
                                 </div>
-                                <i class="fas fa-boxes fa-2x" style="color:#004F99; opacity:0.8;"></i>
+                                <i class="fas fa-boxes stat-icon" style="color:#004F99;"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-12 mb-3">
-                        <div class="stat-card p-3">
+                    <div class="col-6 mb-3">
+                        <div class="stat-card p-2 p-md-3">
                             <div class="d-flex align-items-center justify-content-between">
-                                <div>
-                                    <p class="small text-muted mb-1 font-weight-bold text-uppercase">Stock Disponible</p>
-                                    <h2 class="h3 font-weight-bold mb-0">8,542</h2>
+                                <div style="min-width:0">
+                                    <p class="stat-label mb-1">Stock Disponible</p>
+                                    <h2 class="stat-num font-weight-bold mb-0">8,542</h2>
                                 </div>
-                                <i class="fas fa-shopping-cart fa-2x" style="color:#004F99; opacity:0.8;"></i>
+                                <i class="fas fa-shopping-cart stat-icon" style="color:#004F99;"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-12 mb-3">
-                        <div class="stat-card p-3">
+                    <div class="col-6 mb-3">
+                        <div class="stat-card p-2 p-md-3">
                             <div class="d-flex align-items-center justify-content-between">
-                                <div>
-                                    <p class="small text-muted mb-1 font-weight-bold text-uppercase">Alertas de Stock</p>
-                                    <h2 class="h3 font-weight-bold mb-0 text-danger">4</h2>
+                                <div style="min-width:0">
+                                    <p class="stat-label mb-1">Alertas de Stock</p>
+                                    <h2 class="stat-num font-weight-bold mb-0 text-danger">4</h2>
                                 </div>
-                                <i class="fas fa-exclamation-triangle fa-2x text-warning" style="opacity:0.8;"></i>
+                                <i class="fas fa-exclamation-triangle stat-icon text-warning"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-12 mb-3">
-                        <div class="stat-card p-3">
+                    <div class="col-6 mb-3">
+                        <div class="stat-card p-2 p-md-3">
                             <div class="d-flex align-items-center justify-content-between">
-                                <div>
-                                    <p class="small text-muted mb-1 font-weight-bold text-uppercase">Mis Ventas Hoy</p>
-                                    <h2 class="h3 font-weight-bold mb-0">18</h2>
+                                <div style="min-width:0">
+                                    <p class="stat-label mb-1">Mis Ventas Hoy</p>
+                                    <h2 class="stat-num font-weight-bold mb-0">18</h2>
                                 </div>
-                                <i class="fas fa-file-invoice-dollar fa-2x" style="color:#004F99; opacity:0.8;"></i>
+                                <i class="fas fa-file-invoice-dollar stat-icon" style="color:#004F99;"></i>
                             </div>
                         </div>
                     </div>

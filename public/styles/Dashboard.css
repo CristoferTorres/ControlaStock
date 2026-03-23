@@ -142,3 +142,28 @@
     font-size: 0.8rem;
     margin-top: 2rem;
 }
+/* ── Tarjetas stats responsive ──────────────────────── */
+.stat-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #6c757d;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.stat-num {
+    font-size: 1.4rem;
+}
+.stat-icon {
+    font-size: 1.5rem;
+    opacity: 0.8;
+    flex-shrink: 0;
+    margin-left: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .stat-label { font-size: 0.75rem; }
+    .stat-num   { font-size: 1.6rem; }
+    .stat-icon  { font-size: 2rem; }
+}

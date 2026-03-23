@@ -122,7 +122,7 @@ export function getDashboardAdminHTML() {
                         </div>
                         <div class="progress" style="height:5px;border-radius:4px;">
                             <div class="progress-bar ${p.stock <= 10 ? 'bg-danger' : 'bg-warning'}"
-                                 role="progressbar"
+                                role="progressbar"
                                  style="width:${Math.round((p.stock / p.max) * 100)}%">
                             </div>
                         </div>
@@ -184,45 +184,6 @@ export function getDashboardAdminHTML() {
                     <a href="#" class="acceso-btn" data-acceso="actividad">
                         <i class="fas fa-history"></i> Actividad
                     </a>
-                </div>
-
-                <!-- Ranking de Vendedores -->
-                <div class="stat-card p-3 mb-4">
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <h6 class="font-weight-bold mb-0 text-uppercase small text-muted">Ranking Hoy</h6>
-                        <a href="#" class="small font-weight-bold" style="color:#004F99" data-acceso="empleados">
-                            Ver todos
-                        </a>
-                    </div>
-
-                    ${empleados.map((e, i) => `
-                    <div class="d-flex align-items-center mb-3">
-                        <span style="font-size:.9rem;width:24px;flex-shrink:0">${medals[i]}</span>
-                        <div class="d-flex align-items-center justify-content-center rounded-circle mr-2 font-weight-bold text-white"
-                             style="width:32px;height:32px;background:${e.color};font-size:.72rem;flex-shrink:0">
-                            ${e.avatar}
-                        </div>
-                        <div style="flex:1;min-width:0">
-                            <p class="mb-0 small font-weight-bold text-truncate">${e.nombre}</p>
-                            <p class="mb-0 tiempo">${e.rol} &bull; ${e.ventas} ventas</p>
-                        </div>
-                        <span class="font-weight-bold small" style="color:#28a745;flex-shrink:0">${e.monto}</span>
-                    </div>`).join('')}
-
-                    <div class="d-flex pt-2" style="border-top:1px solid #eee;gap:.5rem">
-                        <div class="text-center" style="flex:1">
-                            <p class="mb-0 font-weight-bold small" style="color:#004F99">$24.5k</p>
-                            <p class="mb-0 tiempo">Total equipo</p>
-                        </div>
-                        <div class="text-center" style="flex:1;border-left:1px solid #eee;border-right:1px solid #eee">
-                            <p class="mb-0 font-weight-bold small" style="color:#004F99">105</p>
-                            <p class="mb-0 tiempo">Transacciones</p>
-                        </div>
-                        <div class="text-center" style="flex:1">
-                            <p class="mb-0 font-weight-bold small" style="color:#004F99">$233</p>
-                            <p class="mb-0 tiempo">Ticket prom</p>
-                        </div>
-                    </div>
                 </div>
 
             </div>
